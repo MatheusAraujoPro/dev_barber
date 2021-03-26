@@ -35,14 +35,14 @@ const App: () => React$Node = () => {
           <Header />
           {global.HermesInternal == null ? null : (
             <View style={styles.engine}>
-              <Text style={styles.footer}>Engine: Hermes</Text>
+              <Text style={styles.footer}>Matheus é foda</Text>
             </View>
           )}
           <View style={styles.body}>
             <View style={styles.sectionContainer}>
               <Text style={styles.sectionTitle}>Step One</Text>
               <Text style={styles.sectionDescription}>
-                Edit <Text style={styles.highlight}>App.js</Text> Vamo comer pachecos
+                Edit <Text style={styles.highlight}>App.js</Text> Nem acredito que deu certo!
               </Text>
             </View>
             <View style={styles.sectionContainer}>
@@ -108,6 +108,6 @@ const styles = StyleSheet.create({
     paddingRight: 12,
     textAlign: 'right',
   },
-});
+}); 
 
 export default App;
