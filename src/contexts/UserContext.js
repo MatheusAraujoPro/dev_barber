@@ -1,3 +1,5 @@
+//Contexto de escopo global
+
 import React, {createContext, useReducer} from 'react';
 import {initialState, UserReducer} from '../reducers/UserReducer'
 
