@@ -13,10 +13,24 @@ const InputArea = Styled.View `
 
 `;
 
-export default  ({IconSvg}) => {
+const InputText = Styled.TextInput `
+  flex:1;
+  font-size: 10px;
+  color: #268596;
+  margin-left: 10px;
+`;
+
+export default  ({IconSvg, Placeholder, value, onChangeText, password}) => {
   return(
     <InputArea>
         <IconSvg width="24" heigth="24" fill="#268596"/>
+        <InputText
+          placeholder={Placeholder}
+          placeholderTextColor="#268596"
+          value={value}
+          onChangeText={onChangeText}
+          secureTextEntry={password}
+        />
     </InputArea>
   );
 }
